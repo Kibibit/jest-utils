@@ -1,10 +1,10 @@
 {
   "name": "@kibibit/jest-utils",
-  "version": "0.0.0-development",
+  "version": "1.0.0-next.2",
   "description": "supporting functions for jest tests",
   "main": "lib/jest-utils.js",
   "scripts": {
-    "build": "tsc",
+    "lint": "eslint --fix lib/**",
     "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,11 +27,12 @@
     "@semantic-release/github": "^5.2.10",
     "@semantic-release/npm": "^5.1.4",
     "@semantic-release/release-notes-generator": "^7.1.4",
-    "npm-check": "^5.9.0",
-    "semantic-release": "^15.13.12",
-    "semantic-release-cli": "^5.0.0",
     "all-contributors-cli": "^6.2.0",
-    "coveralls": "^3.0.3"
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "npm-check": "^5.9.0",
+    "semantic-release": "^16.0.0-beta.18",
+    "semantic-release-cli": "^5.0.0"
   },
   "release": {
     "branches": [
