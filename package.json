@@ -1,0 +1,20 @@
+{
+  "name": "jest-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/jest-utils.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.2",
+    "typescript": "^3.4.5"
+  }
+}
