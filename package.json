@@ -4,7 +4,6 @@
   "description": "supporting functions for jest tests",
   "main": "lib/jest-utils.js",
   "scripts": {
-    "build": "tsc",
     "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
