@@ -1,20 +1,63 @@
 {
-  "name": "jest-utils",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@kibibit/jest-utils",
+  "version": "0.0.0-development",
+  "description": "supporting functions for jest tests",
   "main": "lib/jest-utils.js",
   "scripts": {
     "build": "tsc",
+    "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Neil Kalman <neilkalman@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kibibit/jest-utils.git"
+  },
+  "homepage": "https://github.com/Kibibit/jest-utils#readme",
+  "bugs": {
+    "url": "https://github.com/Kibibit/jest-utils/issues"
+  },
   "dependencies": {
     "jest": "^24.8.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.13",
-    "@types/node": "^12.0.2",
-    "typescript": "^3.4.5"
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.1.0-beta.3",
+    "@semantic-release/github": "^5.2.10",
+    "@semantic-release/npm": "^5.1.4",
+    "@semantic-release/release-notes-generator": "^7.1.4",
+    "npm-check": "^5.9.0",
+    "semantic-release": "^15.13.12",
+    "semantic-release-cli": "^5.0.0",
+    "all-contributors-cli": "^6.2.0",
+    "coveralls": "^3.0.3"
+  },
+  "release": {
+    "branches": [
+      "master",
+      {
+        "name": "next",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  },
+  "jest-stare": {
+    "resultDir": "test-results/",
+    "coverageLink": "../coverage/index.html"
   }
 }
