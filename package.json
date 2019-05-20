@@ -1,6 +1,6 @@
 {
   "name": "@kibibit/jest-utils",
-  "version": "0.0.0-development",
+  "version": "1.0.0-next.1",
   "description": "supporting functions for jest tests",
   "main": "lib/jest-utils.js",
   "scripts": {
