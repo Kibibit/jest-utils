@@ -4,7 +4,7 @@
   "description": "supporting functions for jest tests",
   "main": "lib/jest-utils.js",
   "scripts": {
-    "lint": "eslint --fix",
+    "lint": "eslint --fix lib/**",
     "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
